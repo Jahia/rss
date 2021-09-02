@@ -49,7 +49,7 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>8.0.0.0</version>
+        <version>8.1.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>rss</artifactId>
     <version>3.1.0-SNAPSHOT</version>
@@ -85,31 +85,26 @@
     <dependencies>
         <!-- Dependencies for rome RSS/ATOM Feed library -->
         <dependency>
-            <groupId>rome</groupId>
+            <groupId>com.rometools</groupId>
             <artifactId>rome</artifactId>
-            <version>1.0</version>
+            <version>1.16.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>jdom</groupId>
-                    <artifactId>jdom</artifactId>
+                    <artifactId>jdom2</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>rome</groupId>
+            <groupId>com.rometools</groupId>
             <artifactId>rome-fetcher</artifactId>
-            <version>1.0</version>
+            <version>1.16.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>jdom</groupId>
-                    <artifactId>jdom</artifactId>
+                    <artifactId>jdom2</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>rome</groupId>
-            <artifactId>opensearch</artifactId>
-            <version>0.1</version>
         </dependency>
     </dependencies>
 
